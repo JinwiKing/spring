@@ -354,6 +354,7 @@ public class MapperScannerConfigurer
       processPropertyPlaceHolders();
     }
 
+    // 注意：这个 ClassPathMapperScanner 是 MyBatis-Spring 自己定义的
     ClassPathMapperScanner scanner = new ClassPathMapperScanner(registry);
     scanner.setAddToConfig(this.addToConfig);
     scanner.setAnnotationClass(this.annotationClass);
